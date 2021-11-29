@@ -11,6 +11,11 @@
 		FEB94CDF275560BD001FB5A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB94CDE275560BD001FB5A8 /* ContentView.swift */; };
 		FEB94CE1275560CE001FB5A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB94CE0275560CE001FB5A8 /* Assets.xcassets */; };
 		FEB94CE4275560CE001FB5A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB94CE3275560CE001FB5A8 /* Preview Assets.xcassets */; };
+		FED4F8DE2755676000A0CC13 /* DiningHall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4F8DD2755676000A0CC13 /* DiningHall.swift */; };
+		FED4F8E02755684800A0CC13 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4F8DF2755684800A0CC13 /* DetailView.swift */; };
+		FED4F8E2275568D700A0CC13 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4F8E1275568D700A0CC13 /* ListView.swift */; };
+		FED4F8E52755690A00A0CC13 /* PhotoCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4F8E42755690A00A0CC13 /* PhotoCaptionView.swift */; };
+		FED4F8E72755694C00A0CC13 /* EnhancedPhotoCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED4F8E62755694C00A0CC13 /* EnhancedPhotoCaptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		FEB94CDE275560BD001FB5A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEB94CE0275560CE001FB5A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEB94CE3275560CE001FB5A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FED4F8DD2755676000A0CC13 /* DiningHall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningHall.swift; sourceTree = "<group>"; };
+		FED4F8DF2755684800A0CC13 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FED4F8E1275568D700A0CC13 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListView.swift; path = ../../ListView.swift; sourceTree = "<group>"; };
+		FED4F8E42755690A00A0CC13 /* PhotoCaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptionView.swift; sourceTree = "<group>"; };
+		FED4F8E62755694C00A0CC13 /* EnhancedPhotoCaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedPhotoCaptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 				FEB94CDC275560BD001FB5A8 /* LcsDiningHallAppApp.swift */,
 				FEB94CEB275560E7001FB5A8 /* Views */,
 				FEB94CEA275560DD001FB5A8 /* Model */,
+				FED4F8DF2755684800A0CC13 /* DetailView.swift */,
+				FED4F8E1275568D700A0CC13 /* ListView.swift */,
 				FEB94CE0275560CE001FB5A8 /* Assets.xcassets */,
 				FEB94CE2275560CE001FB5A8 /* Preview Content */,
 			);
@@ -71,6 +83,7 @@
 		FEB94CEA275560DD001FB5A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FED4F8DD2755676000A0CC13 /* DiningHall.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -78,9 +91,19 @@
 		FEB94CEB275560E7001FB5A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FED4F8E3275568EE00A0CC13 /* Shared */,
 				FEB94CDE275560BD001FB5A8 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FED4F8E3275568EE00A0CC13 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FED4F8E42755690A00A0CC13 /* PhotoCaptionView.swift */,
+				FED4F8E62755694C00A0CC13 /* EnhancedPhotoCaptionView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED4F8DE2755676000A0CC13 /* DiningHall.swift in Sources */,
+				FED4F8E02755684800A0CC13 /* DetailView.swift in Sources */,
+				FED4F8E52755690A00A0CC13 /* PhotoCaptionView.swift in Sources */,
+				FED4F8E2275568D700A0CC13 /* ListView.swift in Sources */,
 				FEB94CDF275560BD001FB5A8 /* ContentView.swift in Sources */,
+				FED4F8E72755694C00A0CC13 /* EnhancedPhotoCaptionView.swift in Sources */,
 				FEB94CDD275560BD001FB5A8 /* LcsDiningHallAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
