@@ -11,7 +11,21 @@ import SwiftUI
 struct LcsDiningHallAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Menu", systemImage: "list.dash")
+                    }
+                
+                ContentView()
+                    .tabItem {
+                        Label("Feedback", systemImage: "ellipsis.bubble.fill")
+                 }
+                ContentView()
+                    .tabItem {
+                        Label("Food Restrictions", systemImage: "person.fill.xmark")
+                    }
+            }
         }
     }
 }
