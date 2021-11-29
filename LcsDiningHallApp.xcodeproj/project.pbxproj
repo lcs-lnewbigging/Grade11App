@@ -52,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				FEB94CDC275560BD001FB5A8 /* LcsDiningHallAppApp.swift */,
-				FEB94CDE275560BD001FB5A8 /* ContentView.swift */,
+				FEB94CEB275560E7001FB5A8 /* Views */,
+				FEB94CEA275560DD001FB5A8 /* Model */,
 				FEB94CE0275560CE001FB5A8 /* Assets.xcassets */,
 				FEB94CE2275560CE001FB5A8 /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				FEB94CE3275560CE001FB5A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEB94CEA275560DD001FB5A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEB94CEB275560E7001FB5A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEB94CDE275560BD001FB5A8 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
