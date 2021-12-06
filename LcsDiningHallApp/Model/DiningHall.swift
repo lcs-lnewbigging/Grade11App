@@ -24,7 +24,7 @@ struct DiningHall {
     
 }
 
-let meal = [ DiningHall(imageName: "Grilled Cheese Pic",
+let meal = [ DiningHall(imageName: "grilledCheese",
                         title: "Grilled Cheese",
                         navigationalSubtitle: "Grilled Cheese with tosated bread and gooey cheese",
                         imageCaption: "Grilled Cheese with toasted bread and gooey cheese, with a side of bacon and French Fries",

@@ -10,9 +10,11 @@ import SwiftUI
 struct DetailView: View {
     var body: some View {
         ScrollView{
+            
             Text("Lunch")
                 .bold()
                 .font(.title)
+           
             VStack{
                 HStack{
                     Image("grilledCheese")
