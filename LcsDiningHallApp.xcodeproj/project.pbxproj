@@ -10,6 +10,8 @@
 		FE3D7825275E980200BEE75A /* FeedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D7824275E980200BEE75A /* FeedBackView.swift */; };
 		FE3D7827275E986500BEE75A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D7826275E986500BEE75A /* ListView.swift */; };
 		FE611F0227BC0A06007E83E8 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE611F0127BC0A06007E83E8 /* LandingView.swift */; };
+		FE611F0527BC0D79007E83E8 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = FE611F0427BC0D79007E83E8 /* ACarousel */; };
+		FE611F0727BC0E3F007E83E8 /* CaroselTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE611F0627BC0E3F007E83E8 /* CaroselTestView.swift */; };
 		FEB94CDD275560BD001FB5A8 /* LcsDiningHallAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB94CDC275560BD001FB5A8 /* LcsDiningHallAppApp.swift */; };
 		FEB94CDF275560BD001FB5A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB94CDE275560BD001FB5A8 /* ContentView.swift */; };
 		FEB94CE1275560CE001FB5A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB94CE0275560CE001FB5A8 /* Assets.xcassets */; };
@@ -24,6 +26,7 @@
 		FE3D7824275E980200BEE75A /* FeedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedBackView.swift; path = ../../../FeedBackView.swift; sourceTree = "<group>"; };
 		FE3D7826275E986500BEE75A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		FE611F0127BC0A06007E83E8 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		FE611F0627BC0E3F007E83E8 /* CaroselTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaroselTestView.swift; sourceTree = "<group>"; };
 		FEB94CD9275560BD001FB5A8 /* LcsDiningHallApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LcsDiningHallApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94CDC275560BD001FB5A8 /* LcsDiningHallAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LcsDiningHallAppApp.swift; sourceTree = "<group>"; };
 		FEB94CDE275560BD001FB5A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE611F0527BC0D79007E83E8 /* ACarousel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,10 +53,11 @@
 		FE3D7821275E97CD00BEE75A /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				FE611F0127BC0A06007E83E8 /* LandingView.swift */,
 				FE3D7826275E986500BEE75A /* ListView.swift */,
 				FED4F8DF2755684800A0CC13 /* DetailView.swift */,
 				FE3D7824275E980200BEE75A /* FeedBackView.swift */,
-				FE611F0127BC0A06007E83E8 /* LandingView.swift */,
+				FE611F0627BC0E3F007E83E8 /* CaroselTestView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -136,6 +141,9 @@
 			dependencies = (
 			);
 			name = LcsDiningHallApp;
+			packageProductDependencies = (
+				FE611F0427BC0D79007E83E8 /* ACarousel */,
+			);
 			productName = LcsDiningHallApp;
 			productReference = FEB94CD9275560BD001FB5A8 /* LcsDiningHallApp.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +172,9 @@
 				Base,
 			);
 			mainGroup = FEB94CD0275560BD001FB5A8;
+			packageReferences = (
+				FE611F0327BC0D78007E83E8 /* XCRemoteSwiftPackageReference "ACarousel" */,
+			);
 			productRefGroup = FEB94CDA275560BD001FB5A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,6 +209,7 @@
 				FEB94CDF275560BD001FB5A8 /* ContentView.swift in Sources */,
 				FED4F8E72755694C00A0CC13 /* EnhancedPhotoCaptionView.swift in Sources */,
 				FEB94CDD275560BD001FB5A8 /* LcsDiningHallAppApp.swift in Sources */,
+				FE611F0727BC0E3F007E83E8 /* CaroselTestView.swift in Sources */,
 				FE3D7827275E986500BEE75A /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE611F0327BC0D78007E83E8 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE611F0427BC0D79007E83E8 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE611F0327BC0D78007E83E8 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEB94CD1275560BD001FB5A8 /* Project object */;
 }

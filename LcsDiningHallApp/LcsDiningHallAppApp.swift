@@ -12,9 +12,9 @@ struct LcsDiningHallAppApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                ContentView()
+                LandingView()
                     .tabItem {
-                        Label("Menu", systemImage: "list.dash")
+                        Label("Home Page", systemImage: "list.dash")
                     }
                 
                 ContentView()
