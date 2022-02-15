@@ -14,12 +14,12 @@ struct LcsDiningHallAppApp: App {
             TabView {
                 LandingView()
                     .tabItem {
-                        Label("Home Page", systemImage: "list.dash")
+                        Label("Home Page", systemImage: "house.fill")
                     }
                 
-                ContentView()
+                CaroselTestView()
                     .tabItem {
-                        Label("Feedback", systemImage: "ellipsis.bubble.fill")
+                        Label("Daily Menu", systemImage: "list.bullet")
                  }
                 ContentView()
                     .tabItem {

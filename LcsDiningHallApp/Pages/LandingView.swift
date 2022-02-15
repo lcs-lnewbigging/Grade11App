@@ -10,11 +10,22 @@ import SwiftUI
 struct LandingView: View {
     var body: some View {
         VStack{
+            Image("LCSLogoImage")
+                .resizable()
+                .scaledToFit()
+                .padding(10)
+            
             Text("LCS Dining Hall App")
-                .font(.title3)
+                .font(.largeTitle)
+                .bold()
+                .padding(10)
             HStack{
-                
+               Text("Welcome to the LCS Dining Hall App! THis App was created by students as a tool to acess the LCS meal plan and Menu. Hope you enjoy!")
             }
+            Divider()
+            Spacer()
+            
+           
         
         
         
