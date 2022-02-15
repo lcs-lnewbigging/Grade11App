@@ -9,7 +9,31 @@ import SwiftUI
 
 struct ListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ContentView()
+                .tabItem {
+                    Label("Menu", systemImage: "list.dash")
+                }
+            
+            ContentView()
+                .tabItem {
+                    Label("Feedback", systemImage: "ellipsis.bubble.fill")
+             }
+            ContentView()
+                .tabItem {
+                    Label("Food Restrictions", systemImage: "person.fill.xmark")
+                }
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }
 

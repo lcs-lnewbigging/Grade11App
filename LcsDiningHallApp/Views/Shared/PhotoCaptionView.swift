@@ -7,22 +7,44 @@
 
 import SwiftUI
 
-struct PhotoCaptionView: View {
+struct PhotoCaptionView: View{
+    
+    let imageName: String
+    let caption: String
+    let allergens: String
+    
+    
+    
+    //Computed Property
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        VStack(alignment:.leading){
+            
+            Image(imageName)
+                .resizable()
+                .scaledToFit()
+            
+            VStack(alignment: .leading) {
+
+                Text(caption)
+                    .font(.caption)
+                    .bold()
+                Text(allergens)
+                    .font(.caption)
+                    .bold()
+               
+                
+            }
+            .padding(.horizontal)
+        }
     }
 }
 struct PhotoCaptionView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoCaptionView()
+        PhotoCaptionView(imageName: "grilledCheese",
+                         caption: "Grilled Cheese is a popular toast and cheese sand which, its is made of bread and cheese"
+                         ,
+                         allergens: "Allengens: Tree Nuts, Dairy, Penuts")
+                         
     }
 }
+
