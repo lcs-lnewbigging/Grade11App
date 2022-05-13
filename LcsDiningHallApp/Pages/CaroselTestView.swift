@@ -44,12 +44,12 @@ struct CaroselTestView: View {
             }
             Divider()
             VStack(alignment: .leading){
+                
                 Text("Description")
                     .font(.title3)
                     .bold()
-                
-                
-                    Text("""
+                HStack{
+                Text("""
                          Hot Lunch:
                          -Grilled Cheese
                          -Wood Fired Pizza
@@ -59,8 +59,14 @@ struct CaroselTestView: View {
                          Desert:
                          -Brownies!
                          """)
-                
-                
+                        .font(.body)
+                        .padding()
+                }
+//                .background(Color.green)
+                .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color.red, lineWidth: 4)
+                    )
             }
             
             Spacer()
@@ -68,6 +74,8 @@ struct CaroselTestView: View {
             
             
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+//                    .background(Color.green)
     }
 }
 
