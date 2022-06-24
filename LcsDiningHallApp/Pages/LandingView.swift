@@ -121,7 +121,7 @@ struct LandingView: View {
                 
             }
             
-            
+
             
             
             
@@ -132,7 +132,7 @@ struct LandingView: View {
 struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            LandingView(currentMenu: .constant([testMenu]), menusToShow: testMenuList)
+            LandingView(menusToShow: currentMenu)
         }
     }
 }

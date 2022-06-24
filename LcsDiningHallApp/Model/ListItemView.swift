@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListItemView: View {
     
+    
     // MARK: Stored properties
     let currentMenu: Menu
     
@@ -36,7 +37,7 @@ struct ListItemView: View {
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView(currentMenu: testMenu)
+        ListItemView(currentMenu: .constant([testList]))
     }
 }
 

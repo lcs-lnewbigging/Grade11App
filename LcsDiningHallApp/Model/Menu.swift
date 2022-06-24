@@ -16,18 +16,18 @@ struct Menu: Codable, Identifiable {
     
 }
 
-let testMenu = [
-Menu(date: "5/11/2022",
+let testMenu = Menu(date: "5/11/2022",
      hotMeal: "Scrambled Eggs",
      coldMeal: "Yogurt",
      id:2)
-]
 
-let testMenuList = [
+
+let testList: [Menu] = [
+    
     Menu(date: "5/11/2022",
          hotMeal: "Scrambled Eggs",
          coldMeal: "Yogurt",
-        id: 2)
+         id: 2)
     
     ,
     
@@ -42,7 +42,4 @@ let testMenuList = [
          hotMeal: "French Toast",
          coldMeal: "Smoothies",
          id:4)
- 
-
-
 ]
