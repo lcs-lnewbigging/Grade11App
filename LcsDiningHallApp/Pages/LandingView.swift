@@ -65,14 +65,13 @@ struct LandingView: View {
                     .opacity(menusToShow.isEmpty ? 1.0 : 0.0)
                     
                 }
-                .navigationTitle("The Meals Today")
-                .navigationBarTitleDisplayMode(.large)
-                // Runs once when view is loaded
-                .task {
-                    
-                    await fetchResults()
-                    
-                }
+            }
+            .navigationTitle("Today's Meals")
+            .navigationBarHidden(true)
+            .navigationBarTitleDisplayMode(.automatic)
+            .task {
+                
+                await fetchResults()
                 
             }
         }
@@ -132,7 +131,7 @@ struct LandingView: View {
 struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            LandingView(currentMenu: .constant([testMenu]), menusToShow: testMenuList)
+            LandingView(menusToShow: testList)
         }
     }
 }
