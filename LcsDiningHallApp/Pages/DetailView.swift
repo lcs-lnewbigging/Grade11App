@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DetailView: View {
+    // Stored Properties
+    var menu: Menu
+    
     var body: some View {
         ScrollView{
             
@@ -15,14 +18,8 @@ struct DetailView: View {
                 .bold()
                 .font(.title)
            
-            VStack{
-                
-                
-                HStack{
-                    PhotoCaptionView(imageName: "grilledCheese",
-                                     caption: "Grilled Cheese is a popular toast and cheese sand which, its is made of bread and cheese",
-                                     allergens: "Allengens: Tree Nuts, Dairy, Penuts")
-                    }
+            VStack {
+                    PhotoCaptionView(imageName: "grilledCheese", caption: "Grilled Cheese is a popular toast and cheese sand which, its is made of bread and cheese", allergens: "Allengens: Tree Nuts, Dairy, Penuts")
                 
                 Text("Description:")
                     .bold()
