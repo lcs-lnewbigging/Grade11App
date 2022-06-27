@@ -12,18 +12,17 @@ struct LcsDiningHallAppApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                LandingView()
-                    .tabItem {
-                        Label("Home Page", systemImage: "house.fill")
-                    }
-                
-                CaroselTestView(menuItemBreakfast: testBreakfast, menuItemLunch: testLunch, menuItemDinner: testDinner)
+                CarouselHomePageView(menuItemBreakfast: testBreakfast, menuItemLunch: testLunch, menuItemDinner: testDinner)
                     .tabItem {
                         Label("Daily Menu", systemImage: "list.bullet")
                  }
-                ContentView()
+//                FoodRestrictionsView()
+//                    .tabItem {
+//                        Label("Food Restrictions", systemImage: "person.fill.xmark")
+//                    }
+                AboutView()
                     .tabItem {
-                        Label("Food Restrictions", systemImage: "person.fill.xmark")
+                        Label("Home Page", systemImage: "house.fill")
                     }
             }
         }

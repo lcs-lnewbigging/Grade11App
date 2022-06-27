@@ -15,7 +15,7 @@ struct Item: Identifiable {
 
 let roles = ["grilledCheese", "BrownieImage", "SoupImage", "SaladImage"]
 
-struct CaroselTestView: View {
+struct CarouselHomePageView: View {
     
     var menuItemBreakfast: Menu
     
@@ -117,6 +117,6 @@ struct CaroselTestView: View {
 
 struct CaroselTestView_Previews: PreviewProvider {
     static var previews: some View {
-        CaroselTestView(menuItemBreakfast: testBreakfast, menuItemLunch: testLunch, menuItemDinner: testDinner)
+        CarouselHomePageView(menuItemBreakfast: testBreakfast, menuItemLunch: testLunch, menuItemDinner: testDinner)
     }
 }
