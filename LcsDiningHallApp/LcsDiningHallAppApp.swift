@@ -17,7 +17,7 @@ struct LcsDiningHallAppApp: App {
                         Label("Home Page", systemImage: "house.fill")
                     }
                 
-                CaroselTestView()
+                CaroselTestView(menuItemBreakfast: testBreakfast, menuItemLunch: testLunch, menuItemDinner: testDinner)
                     .tabItem {
                         Label("Daily Menu", systemImage: "list.bullet")
                  }

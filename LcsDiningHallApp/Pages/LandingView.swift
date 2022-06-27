@@ -11,7 +11,7 @@ struct LandingView: View {
     
 //    let currentMenu: Menu
     
-    @State var menusToShow: [Menu] = []
+    @State var fetchedMenus: [Menu] = []
     
     
     var body: some View {
@@ -42,7 +42,7 @@ struct LandingView: View {
                 ZStack {
                     
                     // Shows list of announcements, when there are some to show
-                    List(menusToShow) { currentListItem in
+                    List(fetchedMenus) { currentListItem in
                         
                         NavigationLink(destination: {
                             
@@ -62,7 +62,7 @@ struct LandingView: View {
                         
                         Spacer()
                     }
-                    .opacity(menusToShow.isEmpty ? 1.0 : 0.0)
+                    .opacity(fetchedMenus.isEmpty ? 1.0 : 0.0)
                     
                 }
             }
@@ -108,7 +108,7 @@ struct LandingView: View {
                     let decodedMenus = try JSONDecoder().decode(Menus.self, from: data)
                     
                     // Now, we access the rows of the spreadsheet
-                    menusToShow = decodedMenus.list
+                    fetchedMenus = decodedMenus.list
                     
                 } catch {
                     
@@ -131,7 +131,7 @@ struct LandingView: View {
 struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            LandingView(menusToShow: testList)
+            LandingView(fetchedMenus: testList)
         }
     }
 }

@@ -36,7 +36,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-        DetailView()
+            DetailView(menu: testBreakfast)
                 .navigationBarHidden(true)
         }
     }

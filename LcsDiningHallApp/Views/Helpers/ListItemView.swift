@@ -16,18 +16,26 @@ struct ListItemView: View {
     var body: some View {
 
         VStack(alignment: .leading) {
-            Text(currentMenu.hotMeal)
+            Text(currentMenu.primaryFood)
                 .font(.headline)
+                .lineLimit(3)
+                .fixedSize(horizontal: false, vertical: true)
+                .minimumScaleFactor(1)
+                .multilineTextAlignment(.leading)
+                .allowsTightening(true)
+                
+               
+                
             
             VStack(alignment: .leading) {
                 HStack {
-                    Text("**Second Option:** \(currentMenu.coldMeal)")
+                    Text("**Second Option:** \(currentMenu.secondaryFood)")
                     Spacer()
                 }
                 .font(.caption)
                 
-                Text(currentMenu.date)
-                    .font(.caption)
+//                Text(currentMenu.date)
+//                    .font(.caption)
             }
         }
 
@@ -36,7 +44,7 @@ struct ListItemView: View {
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView(currentMenu: testMenu)
+        ListItemView(currentMenu: testLunch)
     }
 }
 
