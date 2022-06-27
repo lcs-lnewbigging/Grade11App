@@ -11,6 +11,8 @@ struct Menu: Codable, Identifiable {
     
     let date: String //Date
     let meal: String
+//    let description: String
+//    let allergens: String
     let primaryFood: String
     let secondaryFood: String
     let id: Int
