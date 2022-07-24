@@ -25,7 +25,7 @@ struct AboutView: View {
             
             Text("LCS Dining Hall App")
                 .font(.largeTitle)
-                .bold()
+                .bold()	
                 .padding(10)
             
             HStack{
@@ -35,7 +35,7 @@ struct AboutView: View {
           
             Divider()
             
-            // Pictures of Nathan and Luke
+            // Pictures of Nathan    and Luke
             HStack (spacing: 30){
                 Image(systemName: "person")
                     .resizable()
